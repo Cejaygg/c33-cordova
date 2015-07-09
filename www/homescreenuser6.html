@@ -25,12 +25,12 @@
                 //events: "/homescreenws.aspx",
                 eventSources: [
                     {
-                        url:"/homescreenuser6ws.aspx",
+                        url: "/homescreenuser6ws.aspx",
                         type: "POST",
                         color: '#4bb1e6',
                         textColor: 'white'
                     }
-                    ],
+                ],
 
                 eventClick: function (calEvent, jsEvent, view) {
                     var confirmTrue = confirm("Are you sure you want to give away this shift?");
@@ -47,7 +47,7 @@
                         $(this).css('border-color', 'red');
                     }
 
-                    else{
+                    else {
                         alert("You have not given up your shift");
                     }
                 }
@@ -64,37 +64,37 @@
             font-size: 14px;
         }
 
-          .newcalendar {
+        .newcalendar {
             max-width: 90%;
             margin: 0 auto;
         }
-		
-		.pickup {
+
+        .pickup {
             float: right;
         }
-		
+
         .homescreen-title {
             text-align: center;
             font-size: 36px;
             color: #66CCFF;
         }
     </style>
-   
+
 </head>
 <body>
-	<h1 class="homescreen-title">Home Screen</h1>
+    <h1 class="homescreen-title">Home Screen</h1>
     <div class="newcalendar">
-		<div class="pickup">
-		<form method="get" action="http://finaldraft.azurewebsites.net/PickupShiftpageuser6.html?">
-			<button type="submit">PickUp</button>
-		</form>
-	
-		<form method="get" action="http://finaldraft.azurewebsites.net/realloginpage.html">
-            <button type="submit">Log Out</button>
-		</form>
-		</div>
-		<div id='calendar'></div>
-	</div>
+        <div class="pickup">
+            <form method="get" action="http://finaldraft.azurewebsites.net/PickupShiftpageuser6.html?">
+                <button type="submit">PickUp</button>
+            </form>
+
+            <form method="get" action="http://finaldraft.azurewebsites.net/index.html">
+                <button type="submit">Log Out</button>
+            </form>
+        </div>
+        <div id='calendar'></div>
+    </div>
 </body>
 </html>
 
