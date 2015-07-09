@@ -64,23 +64,36 @@
             font-size: 14px;
         }
 
-        #calendar {
+         .newcalendar {
             max-width: 90%;
             margin: 0 auto;
         }
-    </style>
-	    <div id="pickup">
-        <form method="get" action="http://finaldraft.azurewebsites.net/PickupShiftpageuser3.html">
-            <button type="submit">PickUp</button>
-        </form>
 		
-		<form method="get" action="http://finaldraft.azurewebsites.net/realloginpage.html">
-            <button type="submit">Log Out</button>
-    </form>
-    </div>
+		.pickup {
+            float: right;
+        }
+		
+        .homescreen-title {
+            text-align: center;
+            font-size: 36px;
+            color: #66CCFF;
+        }
+    </style>
+   
 </head>
 <body>
-    <div id='calendar'></div>
-</body>
+	<h1 class="homescreen-title">Home Screen</h1>
+    <div class="newcalendar">
+		<div class="pickup">
+		<form method="get" action="http://finaldraft.azurewebsites.net/PickupShiftpageuser3.html?">
+			<button type="submit">PickUp</button>
+		</form>
+	
+		<form method="get" action="http://finaldraft.azurewebsites.net/realloginpage.html">
+            <button type="submit">Log Out</button>
+		</form>
+		</div>
+		<div id='calendar'></div>
+	</div>
 </html>
 

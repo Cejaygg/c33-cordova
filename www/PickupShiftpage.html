@@ -52,18 +52,30 @@
             font-size: 14px;
         }
 
-        #calendar {
+         .calendar {
             max-width: 90%;
             margin: 0 auto;
         }
+
+        .home-button {
+            float: right;
+        }
+        .pickup-title {
+            text-align: center;
+            font-size: 36px;
+            color: orange;
+        }
     </style>
-    <div id="pickup">
-        <form method="get" action="http://finaldraft.azurewebsites.net/homescreen.html">
-            <button type="submit">Home Screen</button>
-        </form>
-    </div>
 </head>
 <body>
+	<h1 class="pickup-title">Available Shifts</h1>
+	<div class="calendar">
+		<div class="home-button">
+			<form method="get" action="http://finaldraft.azurewebsites.net/homescreen.html">
+            <button type="submit">Home Screen</button>
+			</form>
+		</div>
     <div id='calendar'></div>
+	</div>
 </body>
 </html>
